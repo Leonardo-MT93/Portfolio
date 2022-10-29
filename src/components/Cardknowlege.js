@@ -18,7 +18,7 @@ export const Cardknowlege = ({data, open}) => {
                       }}
                         >
                     <h3 className='tittle_card'>{data.tittle}</h3>
-                    <img className='icon_inside' src={data.image}></img>
+                    <img className='icon_inside' src={data.image} alt='icon_knowledge'></img>
         </motion.div>
   )
 }

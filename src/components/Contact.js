@@ -33,19 +33,19 @@ export const Contact = () => {
             <div className='redes_icons'>
             <ul className='list_socialLinks'>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">LinkedIn
-              <img className='logo_contact' src={require('../image/icons/linkedin.png')}></img>
+              <img className='logo_contact' src={require('../image/icons/linkedin.png')} alt='logo_redsocial'></img>
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">GitHub
-              <img className='logo_contact' src={require('../image/icons/github.png')}></img>
+              <img className='logo_contact' src={require('../image/icons/github.png')} alt='logo_redsocial'></img>
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">Instagram
-              <img className='logo_contact' src={require('../image/icons/instagram.png')}></img>
+              <img className='logo_contact' src={require('../image/icons/instagram.png')} alt='logo_redsocial'></img>
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">Twitter
-              <img className='logo_contact' src={require('../image/icons/twitter.png')}></img>
+              <img className='logo_contact' src={require('../image/icons/twitter.png')} alt='logo_redsocial'></img>
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">WhatsApp
-              <img className='logo_contact' src={require('../image/icons/whatsapp.png')}></img>
+              <img className='logo_contact' src={require('../image/icons/whatsapp.png')} alt='logo_redsocial'></img>
               </motion.li>
             </ul>
             </div>
@@ -66,16 +66,3 @@ export const Contact = () => {
     </div>
   )
 }
-
-{/* 
-<motion.div className='contenedor_contact' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 1}}>
-<div className='redes_contact'>
-
-  
-</div>
-<div className='div_form'>
-  
-  <ContactForm/>
-</div>
-</motion.div>  
-<Footer></Footer>  */}

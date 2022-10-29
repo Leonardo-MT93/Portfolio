@@ -44,46 +44,46 @@ export const MisRutas = () => {
             <nav className='menu_header'>
             <ul className='listado_header'>
                 <li className='listado'>
-                  <a to="/Home" className="navLink"  onClick={()=> scrollToSection(home)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_home.png')}></motion.img></a>
+                  <a href='#home' to="/Home" className="navLink"  onClick={()=> scrollToSection(home)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_home.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a to="/Biography" className="navLink" onClick={()=> scrollToSection(bio)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_biography.png')}></motion.img></a>
+                  <a href='#bio' to="/Biography" className="navLink" onClick={()=> scrollToSection(bio)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_biography.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a to="/Knowledge" className="navLink" onClick={()=> scrollToSection(knowledge)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_knowledge.png')}></motion.img></a>
+                  <a href='#knowledge' to="/Knowledge" className="navLink" onClick={()=> scrollToSection(knowledge)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_knowledge.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a to="/Projects" className="navLink" onClick={()=> scrollToSection(project)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_project.png')}></motion.img></a>
+                  <a href='#project' to="/Projects" className="navLink" onClick={()=> scrollToSection(project)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_project.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a to="/Contact" className="navLink" onClick={()=> scrollToSection(contact)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_contact.png')}></motion.img></a>
+                  <a href='#contact' to="/Contact" className="navLink" onClick={()=> scrollToSection(contact)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_contact.png')}></motion.img></a>
                 </li>
             </ul>
             </nav>
         </div>
-          <motion.section className='container_ppal_project' ref={home}><Home/></motion.section>
-          <motion.section className='container_ppal_project'  ref={bio}
+          <motion.section className='container_ppal_project' ref={home} id='#home'><Home/></motion.section>
+          <motion.section className='container_ppal_project'  ref={bio} id='#bio'
                   variants={sectionAnimate}
                   initial={"offscreen"}
                   whileInView={"onscreen"}
                   viewport={{once:false, amount:0.5}}
                   ><Biography/>
           </motion.section>
-          <motion.section className='container_ppal_project' ref={knowledge}
+          <motion.section className='container_ppal_project' ref={knowledge} id='#knowledge'
                   variants={sectionAnimate}
                   initial={"offscreen"}
                   whileInView={"onscreen"}
                   viewport={{once:false, amount:0.5}}
                   ><Knowledge/>
           </motion.section>
-          <motion.section className='container_ppal_project' ref={project}
+          <motion.section className='container_ppal_project' ref={project} id='#project'
                   variants={sectionAnimate}
                   initial={"offscreen"}
                   whileInView={"onscreen"}
                   viewport={{once:false, amount:0.5}}
                   ><Projects/>
           </motion.section>
-          <motion.section className='container_ppal_project' ref={contact}
+          <motion.section className='container_ppal_project' ref={contact} id='#contact'
                   variants={sectionAnimate}
                   initial={"offscreen"}
                   whileInView={"onscreen"}

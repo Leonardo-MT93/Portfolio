@@ -3,19 +3,6 @@ import '../styles/projects.css'
 import { motion } from 'framer-motion';
 export const Projects = () => {
 
-  const details= {
-    hidden:{
-      opacity: 0,
-      x: -50
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 1,
-      }
-    }
-  }
   return (
  
     <div className='container_ppal_project' id='projects'>
@@ -40,10 +27,10 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='btn_carrusel_left'>
-                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/left-arrow.png')}></img></a>
+                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               <div className='btn_carrusel_right'>
-                <a href='#carrusel-item-2'><img className='arrow_btn' src={require('../image/right-arrow.png')}></img></a>
+                <a href='#carrusel-item-2'><img className='arrow_btn' src={require('../image/right-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
             </div>
             <div className='itemCarrusel'id='carrusel-item-2'>
@@ -61,10 +48,10 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='btn_carrusel_left'>
-                <a href='#carrusel-item-1'><img className='arrow_btn' src={require('../image/left-arrow.png')}></img></a>
+                <a href='#carrusel-item-1'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               <div className='btn_carrusel_right'>
-                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/right-arrow.png')}></img></a>
+                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/right-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               </div>
             <div className='itemCarrusel'id='carrusel-item-3'>
@@ -82,10 +69,10 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='btn_carrusel_left'>
-                <a href='#carrusel-item-2'><img className='arrow_btn' src={require('../image/left-arrow.png')}></img></a>
+                <a href='#carrusel-item-2'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               <div className='btn_carrusel_right'>
-                <a href='#carrusel-item-4'><img className='arrow_btn' src={require('../image/right-arrow.png')}></img></a>
+                <a href='#carrusel-item-4'><img className='arrow_btn' src={require('../image/right-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
             </div>
 
@@ -104,10 +91,10 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='btn_carrusel_left'>
-                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/left-arrow.png')}></img></a>
+                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               <div className='btn_carrusel_right'>
-                <a href='#carrusel-item-5'><img className='arrow_btn' src={require('../image/right-arrow.png')}></img></a>
+                <a href='#carrusel-item-5'><img className='arrow_btn' src={require('../image/right-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
             </div>
 
@@ -126,10 +113,10 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='btn_carrusel_left'>
-                <a href='#carrusel-item-4'><img className='arrow_btn' src={require('../image/left-arrow.png')}></img></a>
+                <a href='#carrusel-item-4'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               <div className='btn_carrusel_right'>
-                <a href='#carrusel-item-1'><img className='arrow_btn' src={require('../image/right-arrow.png')}></img></a>
+                <a href='#carrusel-item-1'><img className='arrow_btn' src={require('../image/right-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
 
 
@@ -142,99 +129,3 @@ export const Projects = () => {
     </div>
   )
 }
-
-{/* <motion.div id="carouselExampleControls" className='carousel slide' data-bs-ride="carousel" 
-    variants={details}
-    initial="hidden" 
-    animate="visible" >
-  <div className='carousel-inner'>
-    <div className='carousel-item active'>
-    
-      <div className='card'>
-          <div className='container_image'>
-            <img src={require('../image/icon.png')} className='card-img-top' alt="..."/>  
-          </div>
-        <div className='card-body'>
-          <h2 className='card-title'>Proyecto 1</h2>
-          <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div className='div_button_project'>
-            <a href="www.google.com" className='btn btn-primary'>Ir al proyecto</a>
-            <a href="www.google.com" className='btn btn-primary'>Ir al repositorio</a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    <div className='carousel-item'>
-      <div className='card'>
-          <div className='container_image'>
-            <img src={require('../image/casita.jpg')} className='card-img-top' alt="..."/>
-          </div>
-        <div className='card-body'>
-          <h2 className='card-title'>Proyecto 2</h2>
-          <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div className='div_button_project'>
-            <a href="www.google.com" className='btn btn-primary'>Ir al proyecto</a>
-            <a href="www.google.com" className='btn btn-primary'>Ir al repositorio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className='carousel-item'>
-      <div className='card'>
-          <div className='container_image'>
-            <img src={require('../image/casita.jpg')} className='card-img-top' alt="..."/>
-          </div>
-        <div className='card-body'>
-          <h2 className='card-title'>Proyecto 3</h2>
-          <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div className='div_button_project'>
-            <a href="www.google.com" className='btn btn-primary'>Ir al proyecto</a>
-            <a href="www.google.com" className='btn btn-primary'>Ir al repositorio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className='carousel-item'>
-      <div className='card'>
-          <div className='container_image'>
-            <img src={require('../image/casita.jpg')} className='card-img-top' alt="..."/>
-          </div>
-        <div className='card-body'>
-          <h2 className='card-title'>Proyecto 4</h2>
-          <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div className='div_button_project'>
-            <a href="www.google.com" className='btn btn-primary'>Ir al proyecto</a>
-            <a href="www.google.com" className='btn btn-primary'>Ir al repositorio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className='carousel-item'>
-    <div className='card'>
-          <div className='container_image'>
-            <img src={require('../image/casita.jpg')} className='card-img-top' alt="..."/>
-          </div>
-        <div className='card-body'>
-          <h2 className='card-title'>Proyecto 5</h2>
-          <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div className='div_button_project'>
-            <a href="www.google.com" className='btn btn-primary'>Ir al proyecto</a>
-            <a href="www.google.com" className='btn btn-primary'>Ir al repositorio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className='div_btnPrev'>
-  <button className='carousel-control-prev' type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span className='carousel-control-prev-icon' aria-hidden="true"></span>
-    <span className='visually-hidden'>Previous</span>
-  </button>
-  </div>
-  
-  <button className='carousel-control-next' type="button" >
-    <span className='carousel-control-next-icon' aria-hidden="true" data-bs-target="#carouselExampleControls" data-bs-slide="next"></span>
-    <span className='visually-hidden'>Next</span>
-  </button>
-</motion.div> */}

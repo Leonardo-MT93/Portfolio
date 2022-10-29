@@ -1,23 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import '../styles/biography.css';
 import {motion} from 'framer-motion'
 
 export const Biography = () => {
 
-  const details= {
-    offscreen:{
-      opacity: 0,
-      
-      x: -50
-    },
-    onscreen: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 1,
-      }
-    }
-  }
   return (
     <motion.div className='container_bio' >
       <div className='biography'>
@@ -30,20 +16,20 @@ export const Biography = () => {
           </div>
           <div className='bio_study'>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/krause.png')}></img>
+              <img className='studyCard_img' src={require('../image/formacion/krause.png')} alt='logo_formacion'></img>
               <p className='studyCard_text'>Técnico Mecánico<br></br>Esc.Téc. Otto Krause</p>
             </div>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/utn.png')}></img>
+              <img className='studyCard_img' src={require('../image/formacion/utn.png')} alt='logo_formacion'></img>
               <p className='studyCard_text'>Tecn. en Programación<br></br>UTN FRA - En curso</p>
             </div>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/oracle.png')}></img>
+              <img className='studyCard_img' src={require('../image/formacion/oracle.png')} alt='logo_formacion'></img>
               <p className='studyCard_text'>FrontEnd Developer<br></br>Oracle ONE - 2022</p>
 
             </div>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/cui.jpg')}></img>
+              <img className='studyCard_img' src={require('../image/formacion/cui.jpg')} alt='logo_formacion'></img>
               <p className='studyCard_text'>Ingles A1<br></br>CUI - Nivel4 en curso</p>
             </div>
           </div>
@@ -57,19 +43,3 @@ export const Biography = () => {
     </motion.div>
   )
 }
-
-{/* 
-<motion.div className='biography_details' 
-variants={details}
-initial="offscreen" 
-animate="onscreen" 
->
-  <div className='contain_biography'>
-    <div className='imagen_bio'>
-    </div>
-  </div>         
-     
-  <div className='study_details'>
-
-  </div>
-</motion.div> */}

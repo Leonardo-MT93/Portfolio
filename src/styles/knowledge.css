@@ -131,6 +131,11 @@
     right: 0;
     position: absolute;
     margin: 10px 10px 0 0;
+    border-radius: 50%;
+    
+}
+.modal_btn_close{
+    width: 2vw
 }
 .btn_certificate{
     width: 200px;
