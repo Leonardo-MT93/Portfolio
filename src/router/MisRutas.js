@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import {BrowserRouter} from "react-router-dom";
 import { Biography } from '../components/Biography';
 import { Contact } from '../components/Contact';
-
+import '../styles/header.css';
 import { Home } from '../components/Home';
 import { Knowledge } from '../components/Knowledge';
 import { Projects } from '../components/Projects';

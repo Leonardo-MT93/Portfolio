@@ -47,7 +47,7 @@ export const Knowledge = () => {
         <motion.h2 className='subtitulo' initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 0.35, duration: 0.5}}>Conocimientos</motion.h2>    
         </div>
         {visible &&    
-        <motion.div className='list_knowledge' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.35, duration: 0.5}}>  
+        <motion.div className='list_knowledge' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.35, duration: 0.5}} >  
         <motion.ul className='section_knowledge' layout >
             {knowledges.map((knowledge) =>(
                 <KnowledgeCards data={knowledge} key={knowledge.id}>

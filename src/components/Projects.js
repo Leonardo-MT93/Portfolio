@@ -27,7 +27,7 @@ export const Projects = () => {
                 </div>
               </div>
               <div className='btn_carrusel_left'>
-                <a href='#carrusel-item-3'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
+                <a href='#carrusel-item-5'><img className='arrow_btn' src={require('../image/left-arrow.png')} alt='flecha_carrusel'></img></a>
               </div>
               <div className='btn_carrusel_right'>
                 <a href='#carrusel-item-2'><img className='arrow_btn' src={require('../image/right-arrow.png')} alt='flecha_carrusel'></img></a>
@@ -124,7 +124,6 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      
 
     </div>
   )

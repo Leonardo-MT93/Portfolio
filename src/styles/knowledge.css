@@ -47,6 +47,16 @@
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border: 1px solid rgba(63, 145, 255, 0.56);
+    /* transition: 0.25s; */
+}
+.card_knowledge:hover{
+    cursor: pointer;
+    /* box-shadow: 3px 3px 43px 18px rgba(41,211,235,0.7);
+    -webkit-box-shadow: 3px 3px 43px 18px rgba(41,211,235,0.7);
+    -moz-box-shadow: 3px 3px 43px 18px rgba(41,211,235,0.7); */
+    box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+-webkit-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+-moz-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
 }
 .tittle_card{
     width: 9vw;
@@ -130,16 +140,20 @@
     top: 0;
     right: 0;
     position: absolute;
-    margin: 10px 10px 0 0;
-    border-radius: 50%;
-    
+    margin: 1.5vh 1vw 0 0;
+    width: 1.5vw;
+    background-color: transparent;
+    border: none;
+    transition: transform .75s;
 }
 .modal_btn_close{
-    width: 2vw
+    width: 1.5vw  
+}
+.modal_btn:hover{
+    transform: scale(1.3);
 }
 .btn_certificate{
     width: 200px;
-    /* From https://css.glass */
     background: rgba(43, 227, 227, 0.76);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

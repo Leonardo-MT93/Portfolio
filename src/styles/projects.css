@@ -15,7 +15,7 @@
 }
 .content_project{
     grid-column: 1/5;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 85vh;  
@@ -23,7 +23,7 @@
 }
 .container_carrusel{
     grid-column: 1/6;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     overflow: hidden;
     height: 85vh;
 }
