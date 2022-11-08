@@ -20,7 +20,7 @@ const socialLink = {
 
 export const Contact = () => {
   return (
-    <div className='container_ppal_project' id='contact'>
+    <div className='container_contact' id='contact'>
       <div className='contact'>
         <div className='subtittle'>
         <motion.h2 className='subtitulo' initial={{y: -150}} animate={{y:0}} transition={{delay: 0.1, type: 'spring', stiffness: 75}}>Contacto</motion.h2>
@@ -46,6 +46,9 @@ export const Contact = () => {
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">WhatsApp
               <img className='logo_contact' src={require('../image/icons/whatsapp.png')} alt='logo_redsocial'></img>
+              </motion.li>
+              <motion.li className='socialLinks_mobile' variants={socialLink}  animate="visible" whileHover="hover">Gmail
+              <img className='logo_contact_mobile' src={require('../image/icons/gmail.png')} alt='logo_redsocial'></img>
               </motion.li>
             </ul>
             </div>

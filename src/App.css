@@ -3,6 +3,8 @@ html{
   overflow-y: scroll;
   height: 100vh;
   font-family: 'Audiowide', cursive;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 section{
   scroll-snap-align: start;
@@ -35,4 +37,18 @@ section{
   height: 25px;
   /* -webkit-filter: invert(100%);
   filter: invert(100%); */
+}
+@media (min-width: 300px) and (max-width: 780px){
+  .subtitulo{
+    width: 100%;
+    margin: 0;
+    line-height: none;
+    text-align: center;
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8vw;
+    font-family: 'Audiowide', cursive;
+  }
 }

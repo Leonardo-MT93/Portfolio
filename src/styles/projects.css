@@ -15,7 +15,7 @@
 }
 .content_project{
     grid-column: 1/5;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 85vh;  
@@ -23,7 +23,7 @@
 }
 .container_carrusel{
     grid-column: 1/6;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     overflow: hidden;
     height: 85vh;
 }
@@ -146,4 +146,19 @@
 .btn_project:hover{
     background: rgb(96,164,255);
     background: linear-gradient(90deg, rgba(96,164,255,1) 30%, rgba(125,235,242,1) 72%); scale: 1.1;
+}
+#carrusel-item-1{
+    background-color: crimson;
+}
+#carrusel-item-2{
+    background-color: gray;
+}
+#carrusel-item-3{
+    background-color: yellow;
+}
+#carrusel-item-4{
+    background-color: tan;
+}
+#carrusel-item-5{
+    background-color: rebeccapurple;
 }

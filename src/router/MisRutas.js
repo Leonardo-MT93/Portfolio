@@ -6,15 +6,16 @@ import '../styles/header.css';
 import { Home } from '../components/Home';
 import { Knowledge } from '../components/Knowledge';
 import { Projects } from '../components/Projects';
-import {motion} from 'framer-motion'
+import {motion, MotionValue, useScroll, useTransform} from 'framer-motion'
 
 
 export const MisRutas = () => {
-  const home = useRef();
-  const bio = useRef();
-  const knowledge = useRef();
-  const project = useRef();
-  const contact = useRef();
+  const home = useRef(null);
+  const bio = useRef(null);
+  const knowledge = useRef(null);
+  const project = useRef(null);
+  const contact = useRef(null);
+
 
   const sectionAnimate={
     offscreen:{
@@ -76,13 +77,14 @@ export const MisRutas = () => {
                   viewport={{once:false, amount:0.5}}
                   ><Knowledge/>
           </motion.section>
-          <motion.section className='container_ppal_project' ref={project} id='#project'
+          {/* CORREGIR EL CARRUSEL DE PROYECTOS -- PENDIENTE */}
+          {/* <motion.section className='container_ppal_project' ref={project} id='#project'
                   variants={sectionAnimate}
                   initial={"offscreen"}
                   whileInView={"onscreen"}
                   viewport={{once:false, amount:0.5}}
                   ><Projects/>
-          </motion.section>
+          </motion.section> */}
           <motion.section className='container_ppal_project' ref={contact} id='#contact'
                   variants={sectionAnimate}
                   initial={"offscreen"}

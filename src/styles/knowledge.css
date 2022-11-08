@@ -47,13 +47,9 @@
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border: 1px solid rgba(63, 145, 255, 0.56);
-    /* transition: 0.25s; */
 }
 .card_knowledge:hover{
     cursor: pointer;
-    /* box-shadow: 3px 3px 43px 18px rgba(41,211,235,0.7);
-    -webkit-box-shadow: 3px 3px 43px 18px rgba(41,211,235,0.7);
-    -moz-box-shadow: 3px 3px 43px 18px rgba(41,211,235,0.7); */
     box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
 -webkit-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
 -moz-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
@@ -168,6 +164,342 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    z-index: 200;
     display: flex;
+}
+
+@media (min-width: 300px) and (max-width: 549px){
+    .container_knowledge{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .knowledge{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 94vh;
+     }
+    
+    .list_knowledge{
+        width: 100%;
+        height: 87vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_knowledge{
+        width: 90%;
+        height: 87vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  17vh 17vh 17vh 17vh 17vh;
+        margin: 0;
+        padding: 0;
+        font-family: 'Jura', sans-serif;
+    }
+    .card_knowledge{
+        align-self: center;
+        justify-self: center;
+        width: 38vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* MODIFICAR COLORES FINALES */
+        background: none;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(63, 145, 255, 0.56);
+    }
+    .card_knowledge:hover{
+        cursor: pointer;
+        box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+        -webkit-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+        -moz-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+    }
+    .tittle_card{
+        width: 30vw;
+        text-align: center;
+        margin: 0 0;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+        font-size: 3vw;
+    }
+    .icon_inside{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        width: 15vw;
+        height: 8vh;
+    }
+    .modal{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .knowledge_modal{
+        width: 75vw;
+        padding: 1.5vw;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .tittle_card_modal{
+        width: 100%;
+        font-size: 8vw;
+        text-align: center;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .icon_inside_modal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35vw;
+        height: 15vh;
+    }
+    .text_modal{
+        width: 90%;
+        /* height: 40vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3vw;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .modal_btn{
+        display: block;
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin: 1vh 10vw 0 0;
+        width: 1.5vw;
+        background-color: transparent;
+        border: none;
+        transition: transform .75s;
+    }
+    .modal_btn_close{
+        width: 8vw  
+    }
+    .modal_btn:hover{
+        transform: scale(1.1);
+    }
+    .btn_certificate{
+        width: 50vw;
+        background: rgba(43, 227, 227, 0.76);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(14.3px);
+        -webkit-backdrop-filter: blur(14.3px);
+        border: 1px solid rgba(43, 227, 227, 0.57);
+        margin-bottom: 5vh;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 200;
+        display: flex;
+    }
+}
+@media (min-width: 550px) and (max-width: 780px){
+    .container_knowledge{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .knowledge{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 94vh;
+     }
+    
+    .list_knowledge{
+        width: 100%;
+        height: 87vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_knowledge{
+        width: 90%;
+        height: 87vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  17vh 17vh 17vh 17vh 17vh;
+        margin: 0;
+        padding: 0;
+        font-family: 'Jura', sans-serif;
+    }
+    .card_knowledge{
+        align-self: center;
+        justify-self: center;
+        width: 38vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* MODIFICAR COLORES FINALES */
+        background: none;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(63, 145, 255, 0.56);
+    }
+    .card_knowledge:hover{
+        cursor: pointer;
+        box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+        -webkit-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+        -moz-box-shadow: 3px 3px 43px 16px rgba(41,211,235,0.59);
+    }
+    .tittle_card{
+        width: 30vw;
+        text-align: center;
+        margin: 0 0;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+        font-size: 3vw;
+    }
+    .icon_inside{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+        width: 15vw;
+        height: 8vh;
+    }
+    .modal{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        background: rgba(130, 182, 252, 0.76);
+        border-radius: 0;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(130, 182, 252, 0.56);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .knowledge_modal{
+        width: 75vw;
+        padding: 1.5vw;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(16, 99, 211, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(16, 99, 211, 0.56);
+    }
+    .tittle_card_modal{
+        width: 100%;
+        font-size: 8vw;
+        text-align: center;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .icon_inside_modal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30vw;
+        height: 20vh;
+    }
+    .text_modal{
+        width: 90%;
+        /* height: 40vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.5vw;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .modal_btn{
+        display: block;
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin: 2vh 10vw 0 0;
+        width: 1.5vw;
+        background-color: transparent;
+        border: none;
+        transition: transform .75s;
+    }
+    .modal_btn_close{
+        width: 8vw  
+    }
+    .modal_btn:hover{
+        transform: scale(1.1);
+    }
+    .btn_certificate{
+        width: 40vw;
+        background: rgba(43, 227, 227, 0.76);
+        border-radius: 16px;
+        margin-bottom: 3vh;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 200;
+        display: flex;
+    }
 }

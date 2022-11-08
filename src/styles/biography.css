@@ -106,3 +106,103 @@
     width: 100%;
 }
 
+@media (min-width:300px) and (max-width:780px){
+    .container_bio{
+        width: 100%;
+        height: 100vh;
+        /* background-color: darkblue; */
+        display: flex;
+        justify-content: flex-start;
+      }
+    .biography{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 94vh;
+        /* border: 1px solid crimson; */
+    }
+    .subtittle{
+        height: 6vh;
+        /* border: 1px solid coral; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bio_details{
+        display: flex;
+        width: 100%;
+        height: 87vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0em;
+        margin: 0;   
+        /* border: 1px solid violet; */
+
+    }
+    .bio_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0vw;
+        /* border: 1px solid green; */
+        height: 37vh;
+    }
+    .biography_description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+        font-size: 18px;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+        margin: 0;
+    }
+    .bio_study{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* border: 1px solid crimson; */
+        padding: 0vw 10vw;
+    }
+    .study_card{
+        /* border: 1px solid yellow; */
+        justify-self: center;
+        width: 30vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;   
+        margin: 0 1vw;   
+    }
+    .studyCard_img{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 12vh;
+    }
+    .studyCard_text{
+        font-size: 2.5vw;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .bio_image{
+        display: none;
+        visibility: hidden;
+    }
+}

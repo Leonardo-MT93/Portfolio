@@ -12,7 +12,7 @@ export const Biography = () => {
         </div>
         <div className='bio_details'>
           <div className='bio_text'>
-          <p className='biography_description'>Hola gracias por visitar mi portafolio soy Leonardo Tolaba y es un gusto poder mostrarte lo que es mi mundo. Soy estudiante de la Tecnicatura en Programación en la UTN y a su vez me encuentro realizando el curso brindado por Oracle One para convertirme en desarrollador FrontEnd. Me gustaria poder tener mi primera experiencia como desarrollador y poder capacitarme cada día más. Soy una persona proactiva y me encanta aprender. </p>
+          <p className='biography_description'>Soy Leonardo Tolaba y es un gusto poder mostrarte todo lo que mas me apasiona. Estoy estudiando en la UTN y también estoy cursando inglés en el CUI. Adquirí mucho conocimiento en el bootcamp brindado por Oracle ONE tanto en el Frontend como el Backend. Me encuentro en búsqueda de un empleo donde pueda seguir explotando mis conocimientos y pueda seguir creciendo aun más!</p>
           </div>
           <div className='bio_study'>
             <div className='study_card'>

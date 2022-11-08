@@ -32,7 +32,7 @@ export const Home = () => {
   
   return (
     <div className='home' id='home'> 
-      <div className='logo_home'>**logo**</div>
+      <div className='logo_home'>-Leotolaba-Dev-</div>
       <div className='divisor_portada'>
         <div className='parrafo_portada'>
           <div className='div_typewriter'>
@@ -50,8 +50,8 @@ export const Home = () => {
           </Typewriter>
           </div>
           <motion.div className='btns_home' variants={button} initial="hidden" animate="show">
-            <button className='btn_project'>Contactame</button>
-            <button className='btn_project'>Descargar CV</button>
+            <button className='btn_home'>Contactame</button>
+            <button className='btn_home'>Descargar CV</button>
           </motion.div>
         </div>   
         <motion.div className='redes_portada' variants={image} initial="hidden" animate="show" >
