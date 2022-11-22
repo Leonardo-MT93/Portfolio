@@ -3,8 +3,8 @@ html{
   overflow-y: scroll;
   height: 100vh;
   font-family: 'Audiowide', cursive;
-  scroll-behavior: smooth;
-  -webkit-scroll-behavior: smooth;
+  /* scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth; */
 }
 section{
   scroll-snap-align: start;

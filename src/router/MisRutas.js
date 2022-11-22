@@ -6,7 +6,7 @@ import '../styles/header.css';
 import { Home } from '../components/Home';
 import { Knowledge } from '../components/Knowledge';
 import { Projects } from '../components/Projects';
-import {motion, MotionValue, useScroll, useTransform} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 
 export const MisRutas = () => {
@@ -17,20 +17,20 @@ export const MisRutas = () => {
   const contact = useRef(null);
 
 
-  const sectionAnimate={
-    offscreen:{
-      opacity:0,
-      delay: 1,
-    },
-    onscreen:{
-    x:[-25, 0],
-    opacity:1,
-    transition: {
-    delay: 0.2,
-    duration:1}
-  }
+//   const sectionAnimate={
+//     offscreen:{
+//       opacity:0,
+//       delay: 1,
+//     },
+//     onscreen:{
+//     x:[-25, 0],
+//     opacity:1,
+//     transition: {
+//     delay: 0.1,
+//     duration:1}
+//   }
 
-}
+// }
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -62,36 +62,36 @@ export const MisRutas = () => {
             </ul>
             </nav>
         </div>
-          <motion.section className='container_ppal_project' ref={home} id='#home'><Home/></motion.section>
-          <motion.section className='container_ppal_project'  ref={bio} id='#bio'
-                  variants={sectionAnimate}
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  viewport={{once:false, amount:0.5}}
+          <section className='container_ppal_project' ref={home} id='#home'><Home/></section>
+          <section className='container_ppal_project'  ref={bio} id='#bio'
+                  // variants={sectionAnimate}
+                  // initial={"offscreen"}
+                  // whileInView={"onscreen"}
+                  // viewport={{once:false, amount:0.5}}
                   ><Biography/>
-          </motion.section>
-          <motion.section className='container_ppal_project' ref={knowledge} id='#knowledge'
-                  variants={sectionAnimate}
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  viewport={{once:false, amount:0.5}}
+          </section>
+          <section className='container_ppal_project' ref={knowledge} id='#knowledge'
+                  // variants={sectionAnimate}
+                  // initial={"offscreen"}
+                  // whileInView={"onscreen"}
+                  // viewport={{once:false, amount:0.5}}
                   ><Knowledge/>
-          </motion.section>
+          </section>
           {/* CORREGIR EL CARRUSEL DE PROYECTOS -- PENDIENTE */}
-          {/* <motion.section className='container_ppal_project' ref={project} id='#project'
-                  variants={sectionAnimate}
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  viewport={{once:false, amount:0.5}}
+          <section className='container_ppal_project' ref={project} id='#project'
+                  // variants={sectionAnimate}
+                  // initial={"offscreen"}
+                  // whileInView={"onscreen"}
+                  // viewport={{once:false, amount:0.5}}
                   ><Projects/>
-          </motion.section> */}
-          <motion.section className='container_ppal_project' ref={contact} id='#contact'
-                  variants={sectionAnimate}
-                  initial={"offscreen"}
-                  whileInView={"onscreen"}
-                  viewport={{once:false, amount:0.5}}
+          </section>
+          <section className='container_ppal_project' ref={contact} id='#contact'
+                  // variants={sectionAnimate}
+                  // initial={"offscreen"}
+                  // whileInView={"onscreen"}
+                  // viewport={{once:false, amount:0.5}}
                   ><Contact/> 
-          </motion.section>
+          </section>
         </div>   
           
     </BrowserRouter>

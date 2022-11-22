@@ -32,8 +32,11 @@ export const Contact = () => {
             </div>
             <div className='redes_icons'>
             <ul className='list_socialLinks'>
-              <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">LinkedIn
-              <img className='logo_contact' src={require('../image/icons/linkedin.png')} alt='logo_redsocial'></img>
+              <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">
+                <a href='https://www.linkedin.com/in/leonardo-manuel-tolaba/'>LinkedIn 
+                  <img className='logo_contact' src={require('../image/icons/linkedin.png')} alt='logo_redsocial'>
+                  </img>
+                </a>
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">GitHub
               <img className='logo_contact' src={require('../image/icons/github.png')} alt='logo_redsocial'></img>

@@ -55,7 +55,7 @@ export const Home = () => {
           </motion.div>
         </div>   
         <motion.div className='redes_portada' variants={image} initial="hidden" animate="show" >
-            <motion.img  className='foto_home' src={require('../image/newfoto.png')} alt="imagen de portada"></motion.img>
+            <motion.img  className='foto_home' src={require('../image/PerfilPrincipal.png')} alt="imagen de portada"></motion.img>
         </motion.div>
       </div>        
     </div>

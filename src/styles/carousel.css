@@ -1,115 +1,119 @@
-.container_carousel{
-    display: flex;
+.container_projects_2{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(320deg, #f25121, #e94057, #8a2388);
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+.subtittleProject{
+    width: 100%;
+    height: 10vh;
+}
+.container_carousel{
+    height: 85vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.headings{
-    width: 60%;
-    margin-bottom: 2vw;
+.projectsCarousel{
+    width: 80%;
+    margin: 0 10%;
+    height: 60vh;
 }
-.tittle_Carousel{
-    font-size: 3vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 0 20px;
-    color: #fff;
-    text-decoration: underline;
-    text-decoration-color: #f27121;
-    text-underline-offset: .5vw;
-}
-.slider_wraper{
-    border: 5px solid black;
-    width: 85%;
-    overflow: hidden;
-    padding: 20px;
-    display: flex;
-    height: 70Vh;
-}
-.inner_carousel{
-    display: inline-flex;
-}
-.card_carousel{
-    background-color: #8a2388;
-    width: 19vw;
-    /* background-color: rgba(255, 255, 255, 0); */
-    border-radius: 16px;
-    backdrop-filter: blur(20px);
-    padding: 30px 20px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-                0 3px 6px rgba(0, 0, 0, 0.23);
-    pointer-events: none;
-    margin: 0 0.7vw;
-}
-.card_carousel:hover{
-    background-color: white;
-}
-.tittle_card_carousel{
-    text-align: center;
-    font-size: 1vw;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1;
-    margin-bottom: 2vw;
-    color: #eee;
+.card-wrapperr{
     position: relative;
-    /* display: inline-block; */
-}
-.tittle_card_carousel::after{
-    content: "";
-    width: 50%;
-    height: 4px;
-    background-color: #f27121;
-    left: 4vw;
-    bottom: -7px;
-    position: absolute;
-}
-.card_header{
-    margin-bottom: 16px;
-}
-.tittle{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1vw;
-    font-weight: bold;
-    color: #000;
-}
-.sub_tittle{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1vw;
-    color: #eee;
-
-}
-.card_img{
     width: 100%;
-    height: 250px;
-    display: block;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-bottom: 32px;
-}
-.img_card_slider{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   display: block; 
-}
-.card_footer{
-    background-color: gray;
-    color: #bdbdbd;
+    height: 60vh;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    box-sizing: border-box;
+    /* border: 1px solid crimson; */
 }
-.icon_card_footer{
-    width: 36px;
-    height: 36px;
-    background-color: aqua;
-    margin: 1px;
+.card-wrapperr:active, .card-wrapperr:focus, .card-wrapperr:hover{
+    outline: none;
+    border: none;
 }
-.btn_project_card{
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    /* background-color: orange; */
+    border-radius: 16px;
+    overflow: hidden;
+    /* cursor: pointer; */
+
+    border: 1px solid #60a4ff;
+    text-align: center;
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Jura', sans-serif;
+}
+.card-image{
+    width: 100%;
+    height: 30vh;
+    transition: .5s;
+}
+.imgCardCarousel{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imgCardCarousel:hover{
+    opacity: .4;
+    transition: .5s;
+}
+.CardDetails{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px solid crimson; */
+}
+.tittleCard_carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    height: 5vh;
+    text-decoration: underline;
+    text-decoration-color: #7debf2;
+    text-underline-offset: 4px;
+}
+.descriptionCard_carousel{
+    padding: 0 20px;
+    height: 15vh;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Jura', sans-serif;
+}
+.buttonsCard{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+}
+.btn_carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 12vw;
-    margin: 2vw 2vw;
+    height: 45px;
+    margin: 0 2vw;
     padding: 0.3vw;
     -webkit-text-fill-color: white;
     font-size: 1.2vw;
@@ -117,7 +121,172 @@
     background-color: black;
     transition: 0.6s;
 }
-.btn_project_card:hover{
+.btn_carousel:hover{
     background: rgb(96,164,255);
     background: linear-gradient(90deg, rgba(96,164,255,1) 30%, rgba(125,235,242,1) 72%); scale: 1.1;
+}
+.slick-prev{
+    left: -60px;
+}
+.slick-next{
+    right: -60px;
+}
+.slick-prev, .slick-next{
+    width: 45px;
+    height: 45px;
+}
+.slick-prev::before, .slick-next::before{
+    font-size: 45px;
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+    .container_carousel{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .projectsCarousel{
+        width: 80%;
+        margin: 0 10%;
+        height: 75vh;
+    }
+    .card-wrapperr{
+        position: relative;
+        width: 100%;
+        height: 75vh;
+    }
+    .card-wrapperr:active, .card-wrapperr:focus, .card-wrapperr:hover{
+        outline: none;
+        border: none;
+    }
+    .card{
+        height: 75vh;
+    }
+    .card-image{
+        height: 35vh;
+    }
+    .CardDetails{
+        height: 30vh;
+    }
+    .descriptionCard_carousel{
+        padding: 0 20px;
+        height: 15vh;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .btn_carousel{
+        width: 22vw;
+        height: 45px;
+        font-size: 3vw;
+    }
+
+    .slick-prev{
+        left: -30px;
+    }
+    .slick-next{
+        right: -30px;
+    }
+    .slick-prev, .slick-next{
+        width: 25px;
+        height: 25px;
+    }
+    .slick-prev::before, .slick-next::before{
+        font-size: 25px;
+    }   
+}
+@media (min-width: 501px) and (max-width: 780px){
+    .container_carousel{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .projectsCarousel{
+        width: 80%;
+        margin: 0 10%;
+        height: 75vh;
+    }
+    .card-wrapperr{
+        position: relative;
+        width: 100%;
+        height: 75vh;
+    }
+    .card-wrapperr:active, .card-wrapperr:focus, .card-wrapperr:hover{
+        outline: none;
+        border: none;
+    }
+    .card{
+        height: 75vh;
+    }
+    .card-image{
+        height: 35vh;
+    }
+    .CardDetails{
+        height: 30vh;
+    }
+    .descriptionCard_carousel{
+        padding: 0 20px;
+        height: 15vh;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .btn_carousel{
+        width: 22vw;
+        height: 45px;
+        font-size: 3vw;
+    }
+    .slick-prev{
+        left: -40px;
+    }
+    .slick-next{
+        right: -40px;
+    }
+    .slick-prev, .slick-next{
+        width: 25px;
+        height: 25px;
+    }
+    .slick-prev::before, .slick-next::before{
+        font-size: 25px;
+    }   
+}
+@media (min-width: 781px) and (max-width: 1366px){
+    .tittleCard_carousel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        height: 5vh;
+        text-decoration: underline;
+        text-decoration-color: #7debf2;
+        text-underline-offset: 4px;
+    }
+    .descriptionCard_carousel{
+        padding: 0 20px;
+        height: 15vh;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        background: linear-gradient(90deg, #7debf2, #60a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Jura', sans-serif;
+    }
+    .btn_carousel{
+        height: 35px;
+    }
 }
