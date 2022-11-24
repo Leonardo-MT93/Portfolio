@@ -45,16 +45,16 @@ export const MisRutas = () => {
             <nav className='menu_header'>
             <ul className='listado_header'>
                 <li className='listado'>
-                  <a href='#home' to="/Home" className="navLink"  onClick={()=> scrollToSection(home)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_home.png')}></motion.img></a>
+                  <a href='#home' to="/Home" className="navLink"  onClick={()=> scrollToSection(home)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/homeicon.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a href='#bio' to="/Biography" className="navLink" onClick={()=> scrollToSection(bio)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_biography.png')}></motion.img></a>
+                  <a href='#bio' to="/Biography" className="navLink" onClick={()=> scrollToSection(bio)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/bioicon.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a href='#knowledge' to="/Knowledge" className="navLink" onClick={()=> scrollToSection(knowledge)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_knowledge.png')}></motion.img></a>
+                  <a href='#knowledge' to="/Knowledge" className="navLink" onClick={()=> scrollToSection(knowledge)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/knowledgeicon.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
-                  <a href='#project' to="/Projects" className="navLink" onClick={()=> scrollToSection(project)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_project.png')}></motion.img></a>
+                  <a href='#project' to="/Projects" className="navLink" onClick={()=> scrollToSection(project)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/projecticon.png')}></motion.img></a>
                 </li>
                 <li className='listado'>
                   <a href='#contact' to="/Contact" className="navLink" onClick={()=> scrollToSection(contact)}><motion.img whileHover={{scale: 1.35, transition: {duration: 0.15}}} whileTap={{scale: 0.9}} className='icon' alt='icono navbar' src={require('../image/icon_contact.png')}></motion.img></a>
