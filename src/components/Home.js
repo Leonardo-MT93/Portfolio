@@ -2,8 +2,9 @@ import React from 'react'
 import '../styles/home.css';
 import {motion} from 'framer-motion';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 
-export const Home = () => {
+export const Home = (contact) => {
   const image= {
     hidden:{
       opacity: 0,
@@ -29,6 +30,12 @@ export const Home = () => {
       }
     }
   }
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    })
+  }
   
   return (
     <div className='home' id='home'> 
@@ -50,12 +57,14 @@ export const Home = () => {
           </Typewriter>
           </div>
           <motion.div className='btns_home' variants={button} initial="hidden" animate="show">
-            <button className='btn_home'>Contactame</button>
-            <button className='btn_home'>Descargar CV</button>
+            <button className='btn_home' onClick={()=> scrollToSection(contact)}>Contáctame</button>
+            <button className='btn_home'><Link className='link_demostration' to="/files/CV_Leonardo Manuel Tolaba.pdf" target="_blank" download>Descargar CV</Link></button>
           </motion.div>
         </div>   
         <motion.div className='redes_portada' variants={image} initial="hidden" animate="show" >
-            <motion.img  className='foto_home' src={require('../image/PerfilPrincipal.png')} alt="imagen de portada"></motion.img>
+              <div className='container_fotohome'>
+                <motion.img  className='foto_home' src={require('../image/test1.png')} alt="imagen de portada"></motion.img>
+              </div>
         </motion.div>
       </div>        
     </div>

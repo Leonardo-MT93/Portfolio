@@ -62,7 +62,7 @@ export const MisRutas = () => {
             </ul>
             </nav>
         </div>
-          <section className='container_ppal_project' ref={home} id='#home'><Home/></section>
+          <section className='container_ppal_project' ref={home} id='#home'><Home refProp={contact}></Home></section>
           <section className='container_ppal_project'  ref={bio} id='#bio'
                   // variants={sectionAnimate}
                   // initial={"offscreen"}

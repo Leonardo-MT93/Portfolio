@@ -36,7 +36,7 @@ export const Biography = () => {
         </div>
         <div className='bio_image'>
           <div className='contain_imgbio'>
-          <img src={require('../image/lion.png')} className='imagen_foto' alt='imq'></img>
+          <img src={require('../image/PerfilPrincipal.png')} className='imagen_foto' alt='imq'></img>
           </div>
         </div>
       </div>
