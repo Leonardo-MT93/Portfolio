@@ -4,7 +4,6 @@ import {motion } from 'framer-motion';
 
 
 export const KnowledgeModal = ({data, close}) => {
-
   return (
     <motion.div className='modal' 
     >
@@ -35,8 +34,8 @@ export const KnowledgeModal = ({data, close}) => {
               }
           }}
           ></motion.img>
-          <p className='text_modal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <button className='btn_certificate'>Certificado</button>
+          <p className='text_modal'>{(data.description)}</p>
+          <button className='btn_certificate'><a className='btn_certificate_link' href={data.link}>Certificado</a></button>
           <button className='modal_btn' onClick={close}>
            <img className='modal_btn_close' alt='img_btn_modal' src={require('../image/exit.png')} ></img> 
           </button>  

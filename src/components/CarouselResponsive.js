@@ -48,8 +48,8 @@ function ImageSlider(){
                         <p className="descriptionCard_carousel">Desafio realizado en OracleOne. La misma es Mobile Responsive.</p>
                     </div>
                     <div className="buttonsCard">
-                        <button className="btn_carousel">Demo</button>
-                        <button className="btn_carousel">Repositorio</button>
+                        <button className="btn_carousel"><a className="link_demostration" href="https://leonardo-mt93.github.io/Portfolio_2022/">Demo</a></button>
+                        <button className="btn_carousel"><a className="link_repositorio" href="https://github.com/Leonardo-MT93/Portfolio_2022">Repositorio</a></button>
                     </div>
                 </div>
                 
@@ -65,8 +65,8 @@ function ImageSlider(){
                         <p className="descriptionCard_carousel">Desafio realizado en Oracle. Aplicamos Canva en Javascript</p>
                     </div>
                     <div className="buttonsCard">
-                        <button className="btn_carousel">Demo</button>
-                        <button className="btn_carousel">Repositorio</button>
+                        <button className="btn_carousel"><a className="link_demostration" href="https://leonardo-mt93.github.io/Challengue02---OracleONE---2.0/">Demo</a></button>
+                        <button className="btn_carousel"><a className="link_repositorio" href="https://github.com/Leonardo-MT93/Challengue02---OracleONE---2.0">Repositorio</a></button>
                     </div>
                 </div>
                 
@@ -82,8 +82,8 @@ function ImageSlider(){
                         <p className="descriptionCard_carousel">Desafio realizado en Oracle. La misma trata sobre un e-commerce aplicando CRUD con Javascript </p>
                     </div>
                     <div className="buttonsCard">
-                        <button className="btn_carousel">Demo</button>
-                        <button className="btn_carousel">Repositorio</button>
+                        <button className="btn_carousel"><a className="link_demostration" href="https://leonardo-mt93.github.io/E-commerce_AluraWeek/">Demo</a></button>
+                        <button className="btn_carousel"><a className="link_repositorio" href="https://github.com/Leonardo-MT93/E-commerce_AluraWeek">Repositorio</a></button>
                     </div>
                 </div>
                 
@@ -101,8 +101,8 @@ function ImageSlider(){
                         </p>
                     </div>
                     <div className="buttonsCard">
-                        <button className="btn_carousel">Demo</button>
-                        <button className="btn_carousel">Repositorio</button>
+                        <button className="btn_carousel"><a className="link_demostration" href="https://vimeo.com/manage/videos/772893200">Demo</a></button>
+                        <button className="btn_carousel"><a className="link_repositorio" href="https://github.com/Leonardo-MT93/Hotel-Alura---OracleOne">Repositorio</a></button>
                     </div>
                 </div>
                 

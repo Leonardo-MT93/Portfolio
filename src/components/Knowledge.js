@@ -4,16 +4,16 @@ import {motion } from 'framer-motion';
 import { KnowledgeCards} from './KnowledgeCards';
 
 const knowledges = [
-    {id:0, tittle: "HTML", image: require('../image/icon.png')},
-    {id:1, tittle: "CSS", image: require('../image/icon.png')},
-    {id:2, tittle: "Javascript", image: require('../image/icon.png')},
-    {id:3, tittle: "React.js", image: require('../image/icon.png')},
-    {id:4, tittle: "Node.js", image: require('../image/icon.png')},
-    {id:5, tittle: "Typescript", image: require('../image/icon.png')},
-    {id:6, tittle: "Java", image: require('../image/icon.png')},
-    {id:7, tittle: "MySQL", image: require('../image/icon.png')},
-    {id:8, tittle: "Git", image: require('../image/icon.png')},
-    {id:9, tittle: "C", image: require('../image/icon.png')}
+    {id:0, tittle: "HTML", image: require('../image/icon.png'), description: "Writing Semantic HTML / Accessibility / Forms and Validations / Best Practices", link: "#" },
+    {id:1, tittle: "CSS", image: require('../image/icon.png'), description: "Display/BoxModel/Flexbox/CSS Grid/Responsive Design and Media Queries", link: "#" },
+    {id:2, tittle: "Javascript", image: require('../image/icon.png'), description: "Syntax and Basic Constructs / DOM manipulation / Fetch API / ES6+ / POO / ", link: "#" },
+    {id:3, tittle: "React.js", image: require('../image/icon.png'), description: "Components / Events / Hooks / Router / CustomsHooks", link: "#" },
+    {id:4, tittle: "Node.js", image: require('../image/icon.png'), description: "REST / JWT / NPM / YARGS / SOCKETS / ", link: "#" },
+    {id:5, tittle: "Typescript", image: require('../image/icon.png'), description: "Functions / ES6 / Class / Interfaces / NameSpaces / Generics / jQuery", link: "#" },
+    {id:6, tittle: "Java", image: require('../image/icon.png'), description: "POO / JDBC / Servlets / JavaEE / MySQL", link: "#" },
+    {id:7, tittle: "MongoDB", image: require('../image/icon.png'), description: "CRUD / NoSQL / Schemas & types / Relations / Framework / JSON", link: "#" },
+    {id:8, tittle: "Git", image: require('../image/icon.png'), description: "Versions / Github / GithubPages / Teams", link: "#" },
+    {id:9, tittle: "Linux", image: require('../image/icon.png'), description: "Terminal Bash / Scripts / Shells", link: "#"}
 ]
 
 
@@ -36,7 +36,7 @@ export const Knowledge = () => {
     return() =>{
       window.removeEventListener('scroll', handleScroll);
     }
-  },[]);
+   },[]);
 
 
   return (

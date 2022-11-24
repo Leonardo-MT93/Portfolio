@@ -138,6 +138,12 @@
 .slick-prev::before, .slick-next::before{
     font-size: 45px;
 }
+.link_demostration{
+    text-decoration: none;
+}
+.link_repositorio{
+    text-decoration: none;
+}
 
 @media (min-width: 300px) and (max-width: 500px){
     .container_carousel{
