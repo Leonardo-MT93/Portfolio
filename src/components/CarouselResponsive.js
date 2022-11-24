@@ -40,7 +40,7 @@ function ImageSlider(){
             <div className="card-wrapperr">
                 <div className="card">
                     <div className="card-image">
-                        <img className="imgCardCarousel" src={require('../image/projects/Portfolio_OracleOne.png')} alt="proyecto_portfolio"></img>
+                        <img className="imgCardCarousel" src={require('../image/projects/Portfolio_OracleOne.webp')} alt="proyecto_portfolio"></img>
                     </div>
                     
                     <div className="CardDetails">
@@ -57,7 +57,7 @@ function ImageSlider(){
             <div className="card-wrapperr">
                 <div className="card">
                     <div className="card-image">
-                        <img className="imgCardCarousel" src={require('../image/projects/JuegoAhorcado.png')} alt="proyecto_ahorcado"></img>
+                        <img className="imgCardCarousel" src={require('../image/projects/JuegoAhorcado.webp')} alt="proyecto_ahorcado"></img>
                     </div>
                     
                     <div className="CardDetails">
@@ -74,7 +74,7 @@ function ImageSlider(){
             <div className="card-wrapperr">
                 <div className="card">
                     <div className="card-image">
-                        <img className="imgCardCarousel" src={require('../image/projects/ecommerce.png')} alt="proyecto_ecommerce"></img>
+                        <img className="imgCardCarousel" src={require('../image/projects/ecommerce.webp')} alt="proyecto_ecommerce"></img>
                     </div>
                     
                     <div className="CardDetails">
@@ -91,7 +91,7 @@ function ImageSlider(){
             <div className="card-wrapperr">
                 <div className="card">
                     <div className="card-image">
-                        <img className="imgCardCarousel" src={require('../image/projects/HotelAlura.png')} alt="proyecto_HotelAlura"></img>
+                        <img className="imgCardCarousel" src={require('../image/projects/HotelAlura.webp')} alt="proyecto_HotelAlura"></img>
                     </div>
                     
                     <div className="CardDetails">

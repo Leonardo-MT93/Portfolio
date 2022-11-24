@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: space-evenly;
     /* MODIFICAR COLORES FINALES */
-    background: rgba(63, 145, 255, 0.62);
+    background: rgba(21, 175, 226, 0.62);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(14px);
@@ -66,8 +66,6 @@
     font-size: 1.5vw;
 }
 .icon_inside{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
     width: 5vw;
     height: 8.5vh;
 }
@@ -237,8 +235,7 @@
         font-size: 3vw;
     }
     .icon_inside{
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
+
         width: 15vw;
         height: 8vh;
     }
@@ -401,8 +398,6 @@
         font-size: 3vw;
     }
     .icon_inside{
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
         width: 15vw;
         height: 8vh;
     }

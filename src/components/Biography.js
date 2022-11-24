@@ -16,27 +16,27 @@ export const Biography = () => {
           </div>
           <div className='bio_study'>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/krause.png')} alt='logo_formacion'></img>
+              <img className='studyCard_img' src={require('../image/formacion/krause.webp')} alt='logo_formacion'></img>
               <p className='studyCard_text'>Técnico Mecánico<br></br>Esc.Téc. Otto Krause</p>
             </div>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/utn.png')} alt='logo_formacion'></img>
+              <img className='studyCard_img' src={require('../image/formacion/utn.webp')} alt='logo_formacion'></img>
               <p className='studyCard_text'>Tecn. en Programación<br></br>UTN FRA - En curso</p>
             </div>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/oracle.png')} alt='logo_formacion'></img>
+              <img className='studyCard_img' src={require('../image/formacion/oracle.webp')} alt='logo_formacion'></img>
               <p className='studyCard_text'>FrontEnd Developer<br></br>Oracle ONE - 2022</p>
 
             </div>
             <div className='study_card'>
-              <img className='studyCard_img' src={require('../image/formacion/cui.jpg')} alt='logo_formacion'></img>
+              <img className='studyCard_img' src={require('../image/formacion/cui.webp')} alt='logo_formacion'></img>
               <p className='studyCard_text'>Ingles A1<br></br>CUI - Nivel4 en curso</p>
             </div>
           </div>
         </div>
         <div className='bio_image'>
           <div className='contain_imgbio'>
-          <img src={require('../image/PerfilPrincipal.png')} className='imagen_foto' alt='imq'></img>
+          <img src={require('../image/PerfilPrincipal.webp')} className='imagen_foto' alt='imq'></img>
           </div>
         </div>
       </div>

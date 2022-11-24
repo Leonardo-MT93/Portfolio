@@ -63,7 +63,7 @@ export const Home = (contact) => {
         </div>   
         <motion.div className='redes_portada' variants={image} initial="hidden" animate="show" >
               <div className='container_fotohome'>
-                <motion.img  className='foto_home' src={require('../image/test1.png')} alt="imagen de portada"></motion.img>
+                <motion.img  className='foto_home' src={require('../image/portada.webp')} alt="imagen de portada"></motion.img>
               </div>
         </motion.div>
       </div>        
