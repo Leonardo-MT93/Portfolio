@@ -66,6 +66,7 @@
     justify-content: center;
     width: 80%;
     height: 16vh;
+    z-index: 1;
 }
 .studyCard_text{
     font-size: 0.9vw;
@@ -85,6 +86,7 @@
     /* background-color: lightskyblue;  */
     display: grid;
     grid-template-columns: 1fr;
+    z-index: 1;
 }
 .contain_imgbio{
     margin: 0 5rem;

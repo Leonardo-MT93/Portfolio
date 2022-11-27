@@ -35,7 +35,9 @@ export const KnowledgeModal = ({data, close}) => {
           }}
           ></motion.img>
           <p className='text_modal'>{(data.description)}</p>
-          <button className='btn_certificate'><a className='btn_certificate_link' href={data.link}>Certificado</a></button>
+          <button className='btn_certificate'><a className='btn_certificate_link' href={data.link} target="_blank" rel="noopener noreferrer">
+            {data.link==="#" ? "Pendiente" : "Certificado"}
+            </a></button>
           <button className='modal_btn' onClick={close}>
            <img className='modal_btn_close' alt='img_btn_modal' src={require('../image/exit.png')} ></img> 
           </button>  

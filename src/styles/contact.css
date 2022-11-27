@@ -23,6 +23,7 @@
     grid-template-rows: 100%;
     gap: 1em;
     font-family: 'Jura', sans-serif;
+    z-index: 1;
 }
 
 .redes_contact{

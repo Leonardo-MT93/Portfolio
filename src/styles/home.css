@@ -6,10 +6,27 @@
     gap: 0.5em;
 }
 .logo_home{
+    width: 23%;
     min-height: 100px;
-    color: #17FEFF;
     font-size: 45px;
     padding-left: 35px;
+    animation: neonAnim 1.5s alternate-reverse infinite;
+    color: cyan;
+    font-family: 'Jura', sans-serif;
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 19px rgba(0, 123, 255, .7),
+          0 0 49px rgba(0, 123, 255, .7),
+          0 0 109px rgba(0, 123, 255, .7);
+      }
+      to {
+        text-shadow:
+          0 0 14px rgba(0, 123, 255, .7),
+          0 0 29px rgba(0, 123, 255, .7),
+          0 0 69px rgba(0, 123, 255, .7);
+      }
 }
 .divisor_portada{
     height: 89vh;
@@ -38,6 +55,7 @@
     justify-content: center;
     align-items: center;
     height: 25vh;
+    z-index: 1;
 }
 .btn_home{
     width: 12vw;
@@ -104,7 +122,7 @@
     width: 105%;
     height: 105%;
     position: absolute;
-    object-fit: contain;
+    object-fit: cover;
     transition: 0.5s;
     pointer-events: none;
     top: 0;
@@ -244,7 +262,7 @@
     }
 
 }
-@media (min-width: 781px) and (max-width: 1360px){
+@media (min-width: 781px) and (max-width: 1400px){
     .redes_portada{
         width: 450px;
         height: 450px;
