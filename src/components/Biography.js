@@ -10,7 +10,7 @@ export const Biography = () => {
         <div className='subtittle'>
         <motion.h2 className='subtitulo' initial={{y: -150}} animate={{y:0}} transition={{delay: 0.1, type: 'spring', stiffness: 75}}>A cerca de mí</motion.h2>
         </div>
-        <div className='bio_details'>
+        <motion.div className='bio_details' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 1}}>
           <div className='bio_text'>
           <p className='biography_description'>Soy Leonardo Tolaba y es un gusto poder mostrarte todo lo que mas me apasiona. Estoy estudiando en la UTN y también estoy cursando inglés en el CUI. Adquirí mucho conocimiento en el bootcamp brindado por Oracle ONE tanto en el Frontend como el Backend. Me encuentro en búsqueda de un empleo donde pueda seguir explotando mis conocimientos y pueda seguir creciendo aun más!</p>
           </div>
@@ -33,12 +33,12 @@ export const Biography = () => {
               <p className='studyCard_text'>Ingles A1<br></br>CUI - Nivel4 en curso</p>
             </div>
           </div>
-        </div>
-        <div className='bio_image'>
+        </motion.div>
+        <motion.div className='bio_image' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 1}}>
           <div className='contain_imgbio'>
           <img src={require('../image/PerfilPrincipal.webp')} className='imagen_foto' alt='imq'></img>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   )

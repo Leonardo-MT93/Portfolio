@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
 import '../styles/knowledge.css'
 import {motion } from 'framer-motion';
 import { KnowledgeCards} from './KnowledgeCards';
@@ -19,34 +18,13 @@ const knowledges = [
 
 export const Knowledge = () => {
 
-  const [visible, setVisible] = useState(false);
-  const divRef = useRef();
-
-  // Con UseEffect detecto cada vez que se posiciona la vision de la pagina en esta seccion
-  useEffect(()=>{
-    const handleScroll = () =>{
-      const div = divRef.current;
-      const {y} = div.getBoundingClientRect();
-      const visibilidad = (y <= 100 && y > -850) ? true : false;
-      setVisible(visibilidad);
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    return() =>{
-      window.removeEventListener('scroll', handleScroll);
-    }
-   },[]);
-
-
   return (
     
-    <div className='container_knowledge' id='knowledge' ref={divRef}>
+    <div className='container_knowledge' id='knowledge' >
       <div className='knowledge'>
         <div className='subtittle contactSubtittle'>
-        <motion.h2 className='subtitulo' initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 1, duration: 0.5}}>Conocimientos</motion.h2>    
+        <motion.h2 className='subtitulo' initial={{y: -150}} animate={{y:0}} transition={{delay: 0.1, type: 'spring', stiffness: 75}}>Conocimientos</motion.h2>    
         </div>
-        {visible &&    
         <motion.div className='list_knowledge' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.35, duration: 0.5}}>  
         <motion.ul className='section_knowledge' layout >
             {knowledges.map((knowledge) =>(
@@ -56,7 +34,7 @@ export const Knowledge = () => {
             )}
         </motion.ul>        
       </motion.div>   
-}
+
       </div>
 
     </div>

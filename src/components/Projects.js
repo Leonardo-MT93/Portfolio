@@ -7,13 +7,13 @@ export const Projects = () => {
   return (
         <div className='container_projects_2'>
           <div className='subtittle'>
-          <motion.h2 className='subtitulo' initial={{opacity: 0}} animate={{opacity:1}} transition={{delay: 0.35, duration: 0.5}}>Proyectos</motion.h2>    
+          <motion.h2 className='subtitulo' initial={{y: -150}} animate={{y:0}} transition={{delay: 0.1, type: 'spring', stiffness: 75}}>Proyectos</motion.h2>    
           </div>
-          <div className='container_carousel'>
+          <motion.div className='container_carousel' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 1}}>
             <div className='projectsCarousel'>
             <Responsive></Responsive>
             </div>
-          </div>
+          </motion.div>
           
         </div>
           

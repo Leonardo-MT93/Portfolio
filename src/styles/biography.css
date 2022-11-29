@@ -12,6 +12,7 @@
     gap: 1em;
     grid-template-rows: 10% 85%;
     height: 75rem;
+    z-index: 1;
 }
 .subtittle{
     grid-column: 1/3;

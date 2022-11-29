@@ -13,6 +13,7 @@
     animation: neonAnim 1.5s alternate-reverse infinite;
     color: cyan;
     font-family: 'Jura', sans-serif;
+    z-index: 1;
 }
 @keyframes neonAnim {
     from {
@@ -33,6 +34,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    z-index: 1;
 }
 .parrafo_portada{
     grid-column: 1/2;
@@ -141,16 +143,31 @@
         flex-direction: column;
     }
     .logo_home{
+        width:100%;
+        min-height: 6vh;
+        font-size: 8vw;
+        padding-left: 0;
+        animation: neonAnim 1.5s alternate-reverse infinite;
+        color: cyan;
+        font-family: 'Jura', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 0px;
-        height: 6vh;
-        color: #17FEFF;
-        font-size: 8vw;
-        padding-left: 0px;
         text-align: center;
-        /* border: 1px solid gray; */
+    }
+    @keyframes neonAnim {
+        from {
+            text-shadow:
+              0 0 19px rgba(0, 123, 255, .7),
+              0 0 49px rgba(0, 123, 255, .7),
+              0 0 109px rgba(0, 123, 255, .7);
+          }
+          to {
+            text-shadow:
+              0 0 14px rgba(0, 123, 255, .7),
+              0 0 29px rgba(0, 123, 255, .7),
+              0 0 69px rgba(0, 123, 255, .7);
+          }
     }
     .divisor_portada{
         height: 87vh;
@@ -254,7 +271,7 @@
         width: 105%;
         height: 105%;
         position: absolute;
-        object-fit: contain;
+        object-fit: cover;
         transition: 0.5s;
         pointer-events: none;
         top: 0;
