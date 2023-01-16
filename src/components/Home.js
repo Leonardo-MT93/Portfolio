@@ -60,7 +60,7 @@ export const Home = () => {
           </div>
           <motion.div className='btns_home' variants={button} initial="hidden" animate="show">
             <button className='btn_home'><Link className='link_demostration' to="/contact">Contáctame</Link></button>
-            <button className='btn_home'><Link className='link_demostration' to="/files/CV_Leonardo Manuel Tolaba.pdf" target="_blank" download>Descargar CV</Link></button>
+            <button className='btn_home'><Link className='link_demostration' to="/files/CV_LEONARDO TOLABA.pdf" target="_blank" download>Descargar CV</Link></button>
           </motion.div>
         </div>   
         <motion.div className='redes_portada' variants={image} initial="hidden" animate="show" >
@@ -89,7 +89,7 @@ export const Home = () => {
           </div>
           <motion.div className='btns_home' variants={button} initial="hidden" animate="show">
             <button className='btn_home'><Link className='link_demostration' to="/contact">Contáctame</Link></button>
-            <button className='btn_home'><Link className='link_demostration' to="/files/CV_Leonardo Manuel Tolaba.pdf" target="_blank" download>Descargar CV</Link></button>
+            <button className='btn_home'><Link className='link_demostration' to="/files/CV_LEONARDO TOLABA.pdf" target="_blank" download>Descargar CV</Link></button>
           </motion.div>
         </div>   
         <motion.div className='redes_portada' variants={image} initial="hidden" animate="show" >

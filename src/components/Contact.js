@@ -43,7 +43,7 @@ export const Contact = () => {
                 </a>
               </motion.li>
               <motion.li className='socialLinks' variants={socialLink}  animate="visible" whileHover="hover">
-                <a className='link_socialLinks' href='https://www.instagram.com/leo.m.2021/' target="_blank" rel="noopener noreferrer">Instagram
+                <a className='link_socialLinks' href='https://www.instagram.com/leo.dev.eth/' target="_blank" rel="noopener noreferrer">Instagram
                   <img className='logo_contact' src={require('../image/icons/instagram.webp')} alt='logo_redsocial'></img> 
                 </a>
               </motion.li>
@@ -74,9 +74,9 @@ export const Contact = () => {
             </div>
           </div>
         </motion.div>
-        <div className='contenedor_footer'>
+        <motion.div className='contenedor_footer' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5, duration: 1}}>
           <Footer></Footer>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
